@@ -8,10 +8,10 @@
 
 function sendText() {
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbName = 'whiteelephant';
+	$servername = XXXXXXXXX;
+	$username = "XXXXXXX";
+	$password = XXXXXXX;
+	$dbName = XXXXXXXXXX;
 
 	$con = mysqli_connect($servername,$username,$password,$dbName);
 
@@ -49,19 +49,15 @@ function sendText() {
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'mfs.mail.test.billy';                     //SMTP username
-        $mail->Password   = 'Mfsadmin';                               //SMTP password
+        $mail->Username   = XXXXXXXXXXXXX;                     //SMTP username
+        $mail->Password   = XXXXXXXXX;                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('billy@thebomb.com', 'Billy');
+        $mail->setFrom('email@email.com', 'NAME');
         $mail->addAddress($address, $name);     //Add a recipient
-        // $mail->addAddress('8029995407@mypixmessages.com');     //Add a recipient  
-        // $mail->addAddress('5052704005@vzwpix.com');     //Add a recipient          
-        // $mail->addAddress('5039416095@tmomail.net', 'David');     //Add a recipient
-        // $mail->addAddress('8029995407@mypixmessages.com');    //Bob
-        // $mail->addAddress('david@intellergy.net');               //Name is optional
+        // $mail->addAddress(xxxx@emailexample.com, 'Name');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
