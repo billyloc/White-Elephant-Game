@@ -3,10 +3,10 @@
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbName = 'whiteelephant';
+$servername = "XXXXXXXXXXX";
+$username = "XXXXXXXXXXX";
+$password = "XXXXXXXXXX";
+$dbName = 'XXXXXXXXXXXXXXX';
 
 $con = mysqli_connect($servername,$username,$password,$dbName);
 
